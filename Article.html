@@ -1,0 +1,115 @@
+
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="ctaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ee5a24;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="pillarsGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#45b7d1;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGradient)"/>
+  
+  <!-- Background Pattern -->
+  <circle cx="216" cy="864" r="150" fill="white" opacity="0.08"/>
+  <circle cx="864" cy="216" r="120" fill="white" opacity="0.08"/>
+  <circle cx="540" cy="540" r="200" fill="white" opacity="0.05"/>
+  
+  <!-- Circuit Lines -->
+  <line x1="108" y1="162" x2="308" y2="262" stroke="white" stroke-width="2" opacity="0.2"/>
+  <line x1="864" y1="216" x2="964" y2="166" stroke="white" stroke-width="2" opacity="0.15"/>
+  <line x1="216" y1="864" x2="396" y2="884" stroke="white" stroke-width="2" opacity="0.2"/>
+  <line x1="772" y1="756" x2="872" y2="706" stroke="white" stroke-width="2" opacity="0.15"/>
+  
+  <!-- Floating Elements -->
+  <circle cx="108" cy="216" r="30" fill="white" opacity="0.1"/>
+  <circle cx="972" cy="648" r="20" fill="white" opacity="0.1"/>
+  <circle cx="162" cy="810" r="15" fill="white" opacity="0.1"/>
+  
+  <!-- Header Section -->
+  <!-- Badge -->
+  <rect x="390" y="80" width="300" height="36" rx="18" fill="white" fill-opacity="0.2" stroke="white" stroke-opacity="0.3"/>
+  <text x="540" y="102" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="0.5px">PEER-REVIEWED RESEARCH</text>
+  
+  <!-- Main Title -->
+  <text x="540" y="180" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="56" font-weight="900" filter="url(#shadow)">The Algorithmic</text>
+  <text x="540" y="240" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="56" font-weight="900" filter="url(#shadow)">Retail Consumer</text>
+  
+  <!-- Subtitle -->
+  <text x="540" y="290" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="600" opacity="0.9">Algorithms shape what we see.</text>
+  <text x="540" y="320" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="400" opacity="0.8">And what we buy.</text>
+  
+  <!-- Pillars Section -->
+  <!-- Pillar 1: Personalization -->
+  <rect x="90" y="400" width="900" height="80" rx="20" fill="white" fill-opacity="0.15" stroke="white" stroke-opacity="0.2"/>
+  <rect x="90" y="400" width="900" height="3" rx="1.5" fill="url(#pillarsGradient)"/>
+  <text x="130" y="430" fill="white" font-family="Arial, sans-serif" font-size="24">🎯</text>
+  <text x="175" y="450" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="700">Personalization</text>
+  
+  <!-- Pillar 2: Predictive Decisions -->
+  <rect x="90" y="500" width="900" height="80" rx="20" fill="white" fill-opacity="0.15" stroke="white" stroke-opacity="0.2"/>
+  <rect x="90" y="500" width="900" height="3" rx="1.5" fill="url(#pillarsGradient)"/>
+  <text x="130" y="530" fill="white" font-family="Arial, sans-serif" font-size="24">🔮</text>
+  <text x="175" y="550" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="700">Predictive Decisions</text>
+  
+  <!-- Pillar 3: Satisfying Interactions -->
+  <rect x="90" y="600" width="900" height="80" rx="20" fill="white" fill-opacity="0.15" stroke="white" stroke-opacity="0.2"/>
+  <rect x="90" y="600" width="900" height="3" rx="1.5" fill="url(#pillarsGradient)"/>
+  <text x="130" y="630" fill="white" font-family="Arial, sans-serif" font-size="24">✨</text>
+  <text x="175" y="650" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="700">Satisfying Interactions</text>
+  
+  <!-- Publication Info -->
+  <rect x="290" y="740" width="500" height="100" rx="15" fill="white" fill-opacity="0.1" stroke="white" stroke-opacity="0.2"/>
+  <text x="540" y="770" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="700">Published in IJBTSR</text>
+  <text x="540" y="795" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" opacity="0.8">Kholoud Fadel • June 2024</text>
+  <text x="540" y="815" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" opacity="0.7">If you work in retail, marketing, or CX, this is for you.</text>
+  
+  <!-- CTA Button -->
+  <a href="https://zenodo.org/records/11544950" target="_blank">
+    <rect x="390" y="900" width="300" height="60" rx="30" fill="url(#ctaGradient)" filter="url(#shadow)" style="cursor: pointer;"/>
+    <text x="540" y="935" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1px" style="cursor: pointer;">READ FULL ARTICLE</text>
+  </a>
+  
+  <!-- Decorative Elements -->
+  <rect x="80" y="360" width="920" height="2" rx="1" fill="white" opacity="0.3"/>
+  <rect x="80" y="720" width="920" height="2" rx="1" fill="white" opacity="0.3"/>
+  
+  <!-- Data Visualization Icons -->
+  <g opacity="0.15">
+    <circle cx="950" cy="450" r="3" fill="white"/>
+    <circle cx="960" cy="470" r="2" fill="white"/>
+    <circle cx="940" cy="480" r="2.5" fill="white"/>
+    <line x1="950" y1="450" x2="960" y2="470" stroke="white" stroke-width="1"/>
+    <line x1="960" y1="470" x2="940" y2="480" stroke="white" stroke-width="1"/>
+  </g>
+  
+  <!-- Hash Symbol for Tech Feel -->
+  <text x="50" y="500" fill="white" font-family="monospace" font-size="20" opacity="0.1">#AI</text>
+  <text x="50" y="530" fill="white" font-family="monospace" font-size="16" opacity="0.1">#Retail</text>
+  <text x="50" y="560" fill="white" font-family="monospace" font-size="14" opacity="0.1">#ConsumerBehavior</text>
+</svg>
